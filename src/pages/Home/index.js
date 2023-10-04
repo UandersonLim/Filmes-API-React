@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Movie, MovieList } from './styles';
-import ApiKeys from '../../config/key';
-
 
 function Home() {
 
@@ -11,12 +9,12 @@ function Home() {
   const [movies, setMovies] = useState([])
 
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${ApiKeys}&language=en-US`)
+    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_MINHA_CHAVE}&language=en-US`)
     .then(response => response.json())
     .then(data => {
       setMovies(data.results)
     })
-  }, [])
+  },[])
 
   return (
     <Container>

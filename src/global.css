@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #000000;
+  background: url('https://img.freepik.com/vetores-gratis/fundo-hexagonal-escuro-com-cor-gradiente_79603-1409.jpg') ;
   color: white;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -15,3 +15,4 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
