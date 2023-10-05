@@ -10,7 +10,7 @@ function Details() {
   const imagePath = 'https://image.tmdb.org/t/p/w500/'
 
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_MINHA_CHAVE}&language=en-US`)
+    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_MINHA_CHAVE}&language=pt-BR`)
     .then(response => response.json())
     .then(data => {
       const {title, poster_path, release_date, overview} = data

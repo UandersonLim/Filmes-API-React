@@ -10,7 +10,7 @@ function Home() {
   const [search, setSearch] = useState('')
 
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_MINHA_CHAVE}&language=en-PT`)
+    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_MINHA_CHAVE}&language=pt-BR`)
       .then(response => response.json())
       .then(data => {
         setMovies(data.results)
