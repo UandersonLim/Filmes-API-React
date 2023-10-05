@@ -42,3 +42,20 @@ export const Movie = styled.li`
     transform: scale(1.1);
   }
 `
+
+export const ButtonImput = styled.div`
+  padding: 2rem;
+
+  button, input{
+    padding: 10px 15px;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  button{
+    background-color: #000;
+    color: #fff;
+
+  }
+
+`
