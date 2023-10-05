@@ -58,4 +58,16 @@ export const ButtonImput = styled.div`
 
   }
 
+  @media(max-width: 375px) {
+      input{
+        padding: 10px 7px;
+      }
+  }
+
+  @media(max-width: 360px){
+      input{
+        padding: 10px 2px;
+      }
+  }
+
 `

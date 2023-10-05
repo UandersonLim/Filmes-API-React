@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
+
 export const Container = styled.div`
 
+ 
   padding: 0 3rem;
   
   h1 {
@@ -39,6 +41,25 @@ export const Container = styled.div`
     align-items: flex-start;
     margin-left: 6rem;
     max-width: 50%;
+  }
+
+  @media(max-width: 798px){
+    .movie{
+      flex-wrap: wrap;
+
+    }
+    .details{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      text-align: center;
+      max-width: 100%;
+    }
+    button{
+      margin-bottom: 2rem;
+    }
+
   }
 
   button {
